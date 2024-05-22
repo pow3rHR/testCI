@@ -1,13 +1,13 @@
 version: 2.1
 
 jobs:
-  hello-job:
+  my-job:
     docker:
       - image: cimg/python:3.12
     steps:
       - checkout
-      - run: echo "Hello, World! Diego Herrera Flores"
+      - run: echo "Hola, Mundo!"
 workflows:
   my-workflow:
     jobs:
-      - hello-job
+      - my-job
